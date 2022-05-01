@@ -20,15 +20,15 @@ namespace coup
             string _name;
             string _role;
         public:
-            Player(Game& game, string name, string role = "");
+            Player(Game& game, const string& name, const string& role = "");
             const string getName();
             ~Player();
 
             void income();
             void foreign_aid();
             virtual void coup(const Player& player);
-            const string role();
-            int coins();
+            string role() const;
+            int coins() const;
     };
     
     

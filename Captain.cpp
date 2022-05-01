@@ -2,7 +2,7 @@
 
 using coup::Captain;
 
-Captain::Captain(Game& game, string name) : Player(game, name, "Captain")
+Captain::Captain(Game& game, const string& name) : Player(game, name, "Captain")
 {
 
 }

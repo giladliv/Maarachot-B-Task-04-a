@@ -1,7 +1,7 @@
 #include "Game.hpp"
 using coup::Game;
 
-Game::Game(/* args */)
+Game::Game()
 {
 }
 
@@ -9,17 +9,17 @@ Game::~Game()
 {
 }
 
-const string Game::turn()
+string Game::turn()
 {
-    return ("");
+    return (_turn);
 }
 
-const vector<string> Game::players()
+vector<string> Game::players()
 {
-    return(vector<string>());
+    return(_players);
 }
 
-const string Game::winner()
+string Game::winner()
 {
-    return ("");
+    return (_winner);
 }

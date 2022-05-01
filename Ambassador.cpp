@@ -1,7 +1,7 @@
 #include "Ambassador.hpp"
 using coup::Ambassador;
 
-Ambassador::Ambassador(Game& game, string name) : Player(game, name, "Ambassador")
+Ambassador::Ambassador(Game& game, const string& name) : Player(game, name, "Ambassador")
 {
 
 }

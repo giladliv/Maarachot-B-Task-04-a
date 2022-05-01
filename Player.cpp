@@ -2,8 +2,10 @@
 
 using coup::Player;
 
-Player::Player(Game& game, string name, string role) : _game(game), _name(name), _role(role), _coins(0)
+Player::Player(Game& game, const string& name, const string& role) : _game(game), _coins(0)
 {
+    _name = name;
+    _role = role;
 }
 
 Player::~Player()
@@ -25,12 +27,12 @@ void Player::coup(const Player& player)
 
 }
 
-const string Player::role()
+string Player::role() const
 {
     return _role;
 }
 
-int Player::coins()
+int Player::coins() const
 {
     return _coins;
 }

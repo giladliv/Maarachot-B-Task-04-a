@@ -14,7 +14,7 @@ namespace coup
     private:
         /* data */
     public:
-        Duke(Game& game, string name);
+        Duke(Game& game, const string& name);
         ~Duke();
         void block(Player& other);
         void tax();

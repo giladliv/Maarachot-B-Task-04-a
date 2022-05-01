@@ -2,7 +2,7 @@
 using coup::Duke;
 
 
-Duke::Duke(Game& game, string name) : Player(game, name, "Duke")
+Duke::Duke(Game& game, const string& name) : Player(game, name, "Duke")
 {
 }
 

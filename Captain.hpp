@@ -13,7 +13,7 @@ namespace coup
     private:
         /* data */
     public:
-        Captain(Game& game, string name);
+        Captain(Game& game, const string& name);
         ~Captain();
         void block(Player& player);
         void steal(Player& player);

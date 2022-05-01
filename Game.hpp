@@ -12,13 +12,16 @@ namespace coup
     {
     private:
         /* data */
+        string _turn;
+        vector<string> _players;
+        string _winner;
         
     public:
         Game();
         ~Game();
-        const string turn();
-        const vector<string> players();
-        const string winner();
+        string turn();
+        vector<string> players();
+        string winner();
     };
     
 }

@@ -13,7 +13,7 @@ namespace coup
     private:
         /* data */
     public:
-        Ambassador(Game& game, string name);
+        Ambassador(Game& game, const string& name);
         ~Ambassador();
         void transfer(Player& srcPlyr, Player& dstPlyr);
     };
